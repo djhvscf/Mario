@@ -5,8 +5,8 @@ package  MarioGame
 	import org.flixel.FlxU;
 	
 	/**
-	 * ...
-	 * @author Dennis
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Jugador enemigo con el que el usuario luchara en el juego
 	 */
 	
 	public class JugadorEnemigo extends Jugador
@@ -15,6 +15,13 @@ package  MarioGame
 		protected var _attackDelay:uint;
 		protected var _delay:uint;
 		
+		/**
+		 * Crea el jugador enemigo
+		 * @param	p_x			Ubicación
+		 * @param	p_y			Ubicación
+		 * @param	p_graphic	Objeto que se creara en la posiciones especificadas
+		 * @param	p_health	"Vida" con la que inicia el jugador enemigo
+		 */
 		public function JugadorEnemigo(p_x:Number=0, p_y:Number=0, p_graphic:Class=null, p_health:uint=100)
 		{
 			super(p_x, p_y, p_graphic, p_health);

@@ -7,8 +7,8 @@ package MarioGame
 	
 	/**
 	 * ...
-	 * @author Dennis
-	 * @usage Muestra la pantalla de menú y la música inicial
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Muestra la pantalla de menú
 	 */
 	
 	public class Menu extends FlxState
@@ -28,7 +28,6 @@ package MarioGame
 			FlxG.mouse.show();
 			_boton = new FlxSprite(0, 0, _menuInicio);
 			add(_boton);
-			//Le da "Play" a la música
 			FlxG.play(_musicaIntro);
 		}
 		

@@ -8,12 +8,16 @@ package MarioGame
 	import org.flixel.FlxText;
 	
 	/**
-	 * ...
-	 * @author Dennis
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Muestra la pantalla de juego perdido y termina el juego actual
 	 */
 	
 	public class JuegoPerdido extends FlxState
 	{
+		
+		/**
+		 * Crea la pantalla
+		 */
 		override public function create():void
 		{
 			super.create();
@@ -27,6 +31,9 @@ package MarioGame
 			add(textJuegoOtra);
 		}
 		
+		/**
+		 * Actualiza la pantalla
+		 */
 		override public function update():void
 		{
 			super.update();

@@ -1,8 +1,8 @@
 package  MarioGame
 {
 	/**
-	 * ...
-	 * @author Dennis
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Crea el juego
 	 */
 	public class Juego 
 	{

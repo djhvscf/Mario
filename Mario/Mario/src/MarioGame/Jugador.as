@@ -5,9 +5,10 @@ package MarioGame
 	import org.flixel.FlxG;
 	import org.flixel.FlxObject;
 	import org.flixel.FlxSprite;
+	
 	/**
-	 * ...
-	 * @author Dennis
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Caracterisricas importantes del Jugador
 	 */
 	
 	public class Jugador extends FlxSprite
@@ -29,6 +30,13 @@ package MarioGame
 		public var z:Number;
 		public var _vidaMax:uint;
 		
+		/**
+		 * Crea el jugador
+		 * @param	p_x			Ubicación
+		 * @param	p_y			Ubicación
+		 * @param	p_graphic	Objetos que se creara en la pantalla
+		 * @param	p_health	"Vida" con la que inicia el jugador
+		 */
 		public function Jugador(p_x:Number=0, p_y:Number=0, p_graphic:Class=null, p_health:uint = 100)
 		{
 			super(p_x, p_y, p_graphic);

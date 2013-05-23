@@ -8,9 +8,8 @@ package MarioGame
 	import org.flixel.FlxText;
 	
 	/**
-	 * ...
-	 * @author Dennis
-	 * @usage
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Mantiene la información del jugador
 	 */
 	
 	public class InfoJugador extends FlxGroup
@@ -18,6 +17,10 @@ package MarioGame
 		protected var _textoVida:FlxText;
 		protected var _barraVida:FlxSprite;
 		
+		/**
+		 * Crea la información del jugador
+		 * @param	p_jugadores		Jugadores para agregar al nivel
+		 */
 		public function InfoJugador(p_jugadores:Array)
 		{
 			super();

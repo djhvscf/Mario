@@ -8,8 +8,7 @@ package MarioGame
 	import org.flixel.FlxGame;
 	
 	/**
-	 * ...
-	 * @author Dennis Hernández Vargas
+	 * @author Dennis Hernández Vargas - djhvscf
 	 * @usage Inicia el juego y muesta el menú de inicio
 	 */
 	
@@ -17,7 +16,10 @@ package MarioGame
 	{
 		
 		[SWF(width = "1000", height = "600", backgroundColor = "#000000")]
-	
+		
+		/**
+		 * Inicia el juego
+		 */
 		public function InicioJuego()
 		{
 			super(1000, 600, Menu, 1);

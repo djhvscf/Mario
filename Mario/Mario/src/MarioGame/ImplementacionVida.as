@@ -1,11 +1,15 @@
 package  MarioGame
 {
 	/**
-	 * ...
-	 * @author Dennis
+	 * @author Dennis Hernández Vargas - djhvscf
+	 * @usage Implementación de vida
 	 */
 	public class ImplementacionVida implements PiezaImplementacion
 	{		
+		
+		/**
+		 * Actualiza
+		 */
 		override public function update():void
 		{
 			super.update();
