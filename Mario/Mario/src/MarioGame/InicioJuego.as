@@ -17,6 +17,7 @@ package MarioGame
 		
 		[SWF(width = "1000", height = "600", backgroundColor = "#000000")]
 		
+		
 		/**
 		 * Inicia el juego
 		 */

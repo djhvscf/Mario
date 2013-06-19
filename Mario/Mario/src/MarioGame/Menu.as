@@ -4,6 +4,7 @@ package MarioGame
 	import org.flixel.FlxG;
 	import org.flixel.FlxSprite;
 	import org.flixel.FlxState;
+	import org.flixel.*;
 	
 	/**
 	 * ...
@@ -18,6 +19,7 @@ package MarioGame
 		[Embed(source="data\\intro.mp3")]
 		protected var _musicaIntro:Class;
 		protected var _boton:FlxSprite;
+		protected var credits:FlxButton;
 		
 		/**
 		 * Aquí se crean los objetos necesarios para el inicio del juego
@@ -27,7 +29,9 @@ package MarioGame
 			super.create();
 			FlxG.mouse.show();
 			_boton = new FlxSprite(0, 0, _menuInicio);
+			credits = new FlxButton(3, 220,viewCredits);
 			add(_boton);
+			add(credits);
 			FlxG.play(_musicaIntro);
 		}
 		
@@ -37,10 +41,15 @@ package MarioGame
 		override public function update():void
 		{
 			super.update();
-			if (FlxG.keys.ENTER || FlxG.mouse.justPressed()) 
+			if (FlxG.keys.ENTER) 
 			{				
 				FlxG.state = new PersonalizaJuego();
 			}
+		}
+		
+		private function viewCredits():void
+		{
+			FlxG.state = new Credits();
 		}
 	}
 }
